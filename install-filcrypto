@@ -164,7 +164,7 @@ build_from_source() {
     # For m1, we will build natively if building from source.
     if [ "$(uname -s)" = "Darwin" ] && [ "$(uname -m)" = "x86_64" ]; then
         build="lipo"
-        additional_flags="--targets x86_64-apple-darwin,aarch64-apple-darwin "
+        additional_flags="--targets x86_64-apple-darwin"
     else
         build="build"
     fi
